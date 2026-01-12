@@ -60,12 +60,12 @@ export default function Hero() {
             </motion.div>
           </div>
           {/* Right: Logo/Visual */}
-          <div className="flex-1 flex justify-center items-center">
+          <div className="flex-1 flex justify-center items-center w-full md:w-auto">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="w-full max-w-md aspect-square flex items-center justify-center"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md aspect-square flex items-center justify-center min-h-[250px] sm:min-h-[300px] md:min-h-0"
             >
               <div className="relative w-full h-full">
                 <Image

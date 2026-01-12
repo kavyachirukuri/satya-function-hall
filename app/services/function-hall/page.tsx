@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 export default function FunctionHallPage() {
@@ -8,6 +9,34 @@ export default function FunctionHallPage() {
   // Example: public/function-hall-video.mp4
   // Then update the videoSrc to: '/function-hall-video.mp4'
   const videoSrc = '/function-hall-video.mp4' // Update with your actual video filename
+
+  // Image gallery - Update these paths with your actual image filenames
+  const galleryImages = [
+    {
+      src: '/function-hall-1.jpg',
+      alt: 'Satya Function Hall exterior view',
+    },
+    {
+      src: '/function-hall-2.jpg',
+      alt: 'Satya Function Hall interior during event',
+    },
+    {
+      src: '/function-hall-3.jpg',
+      alt: 'Satya Function Hall entrance with decorations',
+    },
+    {
+      src: '/function-hall-4.jpg',
+      alt: 'Satya Function Hall entrance view',
+    },
+    {
+      src: '/function-hall-5.jpg',
+      alt: 'Satya Function Hall interior setup',
+    },
+    {
+      src: '/function-hall-6.jpg',
+      alt: 'Satya Function Hall interior setup',
+    },
+  ]
 
   return (
     <main className="min-h-screen bg-stone-100">
@@ -71,6 +100,43 @@ export default function FunctionHallPage() {
                 </li>
               </ul>
             </div>
+          </div>
+        </motion.section>
+
+        {/* Image Gallery Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16"
+        >
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold text-green-700 mb-4">Photo Gallery</h2>
+            <p className="text-gray-600 text-lg">
+              Explore our beautiful venue through these images
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                whileHover={{ scale: 1.02 }}
+                className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </motion.div>
+            ))}
           </div>
         </motion.section>
 
