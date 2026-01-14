@@ -45,8 +45,8 @@ const services = [
       'Farmer-focused advisory support',
       'Awareness of agricultural practices',
     ],
-    ctaText: 'Explore Farmer Services',
-    ctaUrl: '/services/farmers',
+    // ctaText: 'Explore Farmer Services',
+    // ctaUrl: '/services/farmers',
   },
   {
     icon: '👨‍🎓',
@@ -58,8 +58,8 @@ const services = [
       'Government schemes awareness',
       'Free Wi-Fi & computer access for learning',
     ],
-    ctaText: 'Visit Youth Centre',
-    ctaUrl: '/services/youth-centre',
+    // ctaText: 'Visit Youth Centre',
+    // ctaUrl: '/services/youth-centre',
   },
 ]
 
