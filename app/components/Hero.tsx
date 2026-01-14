@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-green-700 to-emerald-600 text-white min-h-screen flex items-center py-20 px-4">
+    <section className="bg-gradient-to-br from-green-600 via-green-500 to-green-400 text-white min-h-screen flex items-center py-20 px-4">
       <div className="max-w-7xl mx-auto w-full">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Left: Text Content */}
