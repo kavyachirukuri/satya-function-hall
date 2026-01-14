@@ -11,6 +11,14 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Left: Text Content */}
           <div className="flex-1 text-center md:text-left">
+          <motion.h3
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-xl md:text-2xl mb-6"
+            >
+              With Her Holiness Shri Mataji Nirmala Devi Blessings... 
+            </motion.h3>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -25,7 +33,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl md:text-2xl mb-4 font-light"
             >
-              Serving Society. Empowering Lives. Building the Future.
+              Serving Society. Empowering Lives. Building the Future as per the teachings of H.H.Shri Mataji Nirmala Devi through Sahaja Yoga.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 30 }}

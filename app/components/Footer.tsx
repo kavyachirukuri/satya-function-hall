@@ -37,6 +37,7 @@ export default function Footer() {
               </div>
               <div className="mt-3">
                 <p> +91-9848118765 </p>
+                <p>satyaswt17@gmail.com</p>
               </div>
             </div>
           </div>

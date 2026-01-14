@@ -17,7 +17,9 @@ export default function SahajaYogaPage() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-3xl font-bold text-green-700 mb-6">About Our Center</h2>
           <p className="text-gray-700 text-lg mb-6">
-            The Sahaja Yoga Dhyana Kendram offers a serene environment for individuals seeking inner peace and spiritual growth. Our center welcomes people of all ages and backgrounds to experience the transformative power of meditation and yoga.
+            The Sahaja Yoga Dhyana Kendram offers a serene environment for individuals seeking inner peace and spiritual growth. 
+            Our center welcomes Truth seekers of all ages and backgrounds to experience the transformative power of meditation through Sahaja yoga by Exprience of Cool breez on Palms and on Head. 
+            Sahaja Yoga Resource Center / promote weekly Collective  Meditation.
           </p>
           <p className="text-gray-700 text-lg">
             We believe that everyone deserves access to tools for mental and spiritual well-being, which is why all our classes and sessions are completely free of charge.
