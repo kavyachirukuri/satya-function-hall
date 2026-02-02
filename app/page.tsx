@@ -127,45 +127,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section className="py-16 px-4 bg-emerald-50">
-        <div className="max-w-7xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-4xl font-bold text-green-700 mb-8 text-center"
-          >
-            Why Choose Us
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            {impactPoints.map((point, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-md text-center"
-              >
-                <div className="text-3xl mb-3">✔</div>
-                <p className="text-gray-700 font-semibold">{point}</p>
-              </motion.div>
-            ))}
-          </div>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center text-lg text-gray-700 font-medium italic"
-          >
-            We don't just provide services — we build opportunities and confidence.
-          </motion.p>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-green-700 to-emerald-600 text-white">
         <motion.div
