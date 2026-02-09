@@ -31,7 +31,7 @@ export default function RootLayout({
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            window.gtag = function(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-FX4CT0Z7TV');
           `}
